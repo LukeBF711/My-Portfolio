@@ -3,3 +3,18 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+nav{
+    display: flex; /*initiates use of flexbox on the parent*/
+    justify-content: space-between; /*distributes the child elements with space between them. Pushes nav links to the end*/
+    align-items: center; /*vertically centers the child elements within the nav bar*/
+    background-color: #000;
+    color: #fff;
+    padding: 18px 5%;
+}
+
+.nav-links{
+    list-style: none; /*removes the default bullet points from the list*/
+    display: flex; /*initiates use of flexbox on the nav links parent and transforms them horizontally*/
+    gap: 25px; /*adds space between the nav links*/
+}
