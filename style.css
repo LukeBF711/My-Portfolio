@@ -4,7 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 nav{
+    position: fixed; /*makes the nav bar stick to the top of the viewport when scrolling*/
+    top: 0px; /*sets the distance from the top of the viewport to 20px, ensuring the nav bar stays at the top*/
+    width: 100%; /*makes the nav bar span the entire width of the viewport*/
     display: flex; /*initiates use of flexbox on the parent*/
     justify-content: space-between; /*distributes the child elements with space between them. Pushes nav links to the end*/
     align-items: center; /*vertically centers the child elements within the nav bar*/
@@ -13,8 +20,70 @@ nav{
     padding: 18px 5%;
 }
 
+.logo{
+    font-size: 2rem;
+}
+
 .nav-links{
     list-style: none; /*removes the default bullet points from the list*/
     display: flex; /*initiates use of flexbox on the nav links parent and transforms them horizontally*/
     gap: 25px; /*adds space between the nav links*/
 }
+
+.hero-sec{
+    display: flex;
+    justify-content: space-between; /* distributes items evenly along the main axis*/
+    /*first item at start, last at end, equal gaps between them*/
+    align-items: center; /*vertically centers the child elements within the hero section*/
+    padding: 50px 5%;
+    min-height: 100vh; /*sets the minimum height of the hero section to 90% of the viewport height*/
+    background-color: #1F4BAB;
+    z-index: 1000;
+}
+
+.profile-pic{
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic img{
+    width: 50%;
+    border-radius: 5%; /*makes the image circular by setting the border radius to 50% of its width and height*/
+}
+
+.hero-text{
+    /* background-color: greenyellow; */
+    padding: 20px;
+    color: #fff;
+
+}
+
+.hero-text h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 1.2rem;
+    line-height: 1.5; /*increases the space between lines of text for better readability*/
+    margin-bottom: 25px;
+}
+
+.btn{
+    display: inline-block; /*allows the button to have padding and margin while still behaving like a block element*/
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #2563EB;
+    font-weight: bold;
+}
+
+
+
