@@ -168,6 +168,35 @@ nav{
     margin-bottom: 15px;
 }
 
+/* contact form */
+#contact{
+    background-color: #111827;
+    color: #fff;
+}   
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+}
+
+textarea{
+    width: 25vw;;
+    padding: 10px;
+}
+
+input{
+    padding: 10px;
+    width: 25vw;
+}
+
+/* footer */
+footer p{
+    text-align: center;
+}
+
+
+
+
 
 
 

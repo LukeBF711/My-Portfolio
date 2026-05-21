@@ -111,14 +111,28 @@
         </section>
 
         <!--contact-->
-        <section>
+        <section id="contact">
+            <h2 class="section-title">Contact Me</h2>
             <form class="contact-form">
-                <h2>Contact Me</h2>
                 <div class="input-fields">
-                    <input type="text" placeholder="Your Name">
-                    <input type="text" placeholder="Your Email">
-                    <textarea rows="5" placeholder="Your Message"></textarea>
-                    <button>Send Message</button>
+                    <div>
+                        <!-- <label for="name">Name</label> -->
+                        <input type="text" id="name" placeholder="Your Name">
+                    </div>
+                    <br>
+                    <div>
+                        <!-- <label for="email">Email</label> -->
+                        <input type="email" id="email" placeholder="Your Email">
+                    </div>
+                    <br>
+                    <div id="message">
+                        <!-- <label for="message">Your Message</label> -->
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                    <br>
+                    <button class="btn">
+                        <a href="#">Submit</a>
+                    </button>
                 </div>
             </form>
         </section>
