@@ -83,7 +83,7 @@ nav{
 }
 
 .profile-pic img{
-    width: 50%;
+    width: 40%;
     border-radius: 5%; /*makes the image circular by setting the border radius to 50% of its width and height*/
 }
 
